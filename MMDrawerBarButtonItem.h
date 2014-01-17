@@ -39,7 +39,7 @@
  @return The newly-initialized bar button item.
  */
 -(id)initWithTarget:(id)target action:(SEL)action;
-
+-(id)initWithTarget:(id)target action:(SEL)action image:(UIImage *)image;
 /**
  Returns the current color of the menu button for the state requested. This property is deprecated in iOS 7.0. Use `tintColor` instead.
  

@@ -261,6 +261,26 @@
 
 }
 
+-(id)initWithTarget:(id)target action:(SEL)action image:(UIImage *)image {
+    if((floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1)){
+        return [self initWithImage:image
+                             style:UIBarButtonItemStylePlain
+                            target:target
+                            action:action];
+    }
+    else {
+        MMDrawerMenuButtonView * buttonView = [[MMDrawerMenuButtonView alloc] initWithFrame:CGRectMake(0, 0, 26, 26)];
+        [buttonView addTarget:self action:@selector(touchUpInside:) forControlEvents:UIControlEventTouchUpInside];
+        self = [self initWithCustomView:buttonView];
+        if(self){
+            [self setButtonView:buttonView];
+        }
+        self.action = action;
+        self.target = target;
+        return self;
+    }
+}
+
 -(id)initWithCoder:(NSCoder *)aDecoder{
     // non-ideal way to get the target/action, but it works
     UIBarButtonItem* barButtonItem = [[UIBarButtonItem alloc] initWithCoder: aDecoder];

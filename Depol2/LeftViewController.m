@@ -7,26 +7,45 @@
 //
 
 #import "LeftViewController.h"
+#import "TempViewController.h"
+#import "UIViewController+MMDrawerController.h"
+#import "CenterViewController.h"
 
-@interface LeftViewController ()
+@interface LeftViewController () <UITableViewDataSource, UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableViewCell *table;
 
 @end
 
-@implementation LeftViewController
+@implementation LeftViewController {
+    NSArray *data;
+}
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [data count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CELL_ID" forIndexPath:indexPath];
+    cell.textLabel.text = [data objectAtIndex:indexPath.row];
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (indexPath.row == 0) {
+        CenterViewController *centerVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"center"];
+        [self.mm_drawerController setCenterViewController:centerVC withCloseAnimation:YES completion:nil];
+    }else if (indexPath.row == 1) {
+         TempViewController *centerVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"temp"];
+        [self.mm_drawerController setCenterViewController:centerVC withCloseAnimation:YES completion:nil];
     }
-    return self;
+    
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    data = @[@"1", @"2"];
 }
 
 - (void)didReceiveMemoryWarning
