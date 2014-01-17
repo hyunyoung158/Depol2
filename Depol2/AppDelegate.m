@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "MMDrawerController.h"
 #import "LeftViewController.h"
-#import "ViewController.h"
+#import "CenterViewController.h"
 
 @interface AppDelegate()
 
@@ -20,7 +20,7 @@
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
     LeftViewController *leftSideDrawerViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"left"];
-    ViewController *centerViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"center"];
+    CenterViewController *centerViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"center"];
     
     UINavigationController * navigationController = [[UINavigationController alloc] initWithRootViewController:centerViewController];
     UINavigationController * leftSideNavController = [[UINavigationController alloc] initWithRootViewController:leftSideDrawerViewController];
@@ -28,6 +28,11 @@
     
     self.drawerController = [[MMDrawerController alloc] initWithCenterViewController:navigationController leftDrawerViewController:leftSideNavController];
     
+    // 스와이프 적용
+//    [self.drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+    [self.drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+    
+    // drawerController는 네비게이션과 좌/우 뷰컨트롤러만 가진 아이~!?
     [self.window setRootViewController:self.drawerController];
     
     return YES;

@@ -14,7 +14,7 @@
 		00DE702718878ED100AA24E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DE702618878ED100AA24E9 /* main.m */; };
 		00DE702B18878ED100AA24E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DE702A18878ED100AA24E9 /* AppDelegate.m */; };
 		00DE702E18878ED100AA24E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00DE702C18878ED100AA24E9 /* Main.storyboard */; };
-		00DE703118878ED100AA24E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DE703018878ED100AA24E9 /* ViewController.m */; };
+		00DE703118878ED100AA24E9 /* CenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DE703018878ED100AA24E9 /* CenterViewController.m */; };
 		00DE703318878ED100AA24E9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00DE703218878ED100AA24E9 /* Images.xcassets */; };
 		00DE703A18878ED200AA24E9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00DE703918878ED200AA24E9 /* XCTest.framework */; };
 		00DE703B18878ED200AA24E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00DE701A18878ED100AA24E9 /* Foundation.framework */; };
@@ -25,7 +25,6 @@
 		00DE70591887911500AA24E9 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DE70521887911500AA24E9 /* MMDrawerController.m */; };
 		00DE705A1887911500AA24E9 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DE70551887911500AA24E9 /* MMDrawerVisualState.m */; };
 		00DE705B1887911500AA24E9 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DE70571887911500AA24E9 /* UIViewController+MMDrawerController.m */; };
-		00DE705F188791BC00AA24E9 /* CenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DE705E188791BC00AA24E9 /* CenterViewController.m */; };
 		00DE712E1887CC9900AA24E9 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DE712D1887CC9900AA24E9 /* LeftViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -51,8 +50,8 @@
 		00DE702918878ED100AA24E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		00DE702A18878ED100AA24E9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		00DE702D18878ED100AA24E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		00DE702F18878ED100AA24E9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		00DE703018878ED100AA24E9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		00DE702F18878ED100AA24E9 /* CenterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CenterViewController.h; path = Depol2/CenterViewController.h; sourceTree = "<group>"; };
+		00DE703018878ED100AA24E9 /* CenterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CenterViewController.m; path = Depol2/CenterViewController.m; sourceTree = "<group>"; };
 		00DE703218878ED100AA24E9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		00DE703818878ED200AA24E9 /* Depol2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Depol2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00DE703918878ED200AA24E9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -68,10 +67,8 @@
 		00DE70551887911500AA24E9 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
 		00DE70561887911500AA24E9 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
 		00DE70571887911500AA24E9 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
-		00DE705D188791BC00AA24E9 /* CenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CenterViewController.h; path = Depol2/CenterViewController.h; sourceTree = "<group>"; };
-		00DE705E188791BC00AA24E9 /* CenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CenterViewController.m; path = Depol2/CenterViewController.m; sourceTree = "<group>"; };
-		00DE712C1887CC9900AA24E9 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
-		00DE712D1887CC9900AA24E9 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		00DE712C1887CC9900AA24E9 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeftViewController.h; path = Depol2/LeftViewController.h; sourceTree = "<group>"; };
+		00DE712D1887CC9900AA24E9 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeftViewController.m; path = Depol2/LeftViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +95,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0026F35E1888C2970000F1B0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				00DE702F18878ED100AA24E9 /* CenterViewController.h */,
+				00DE703018878ED100AA24E9 /* CenterViewController.m */,
+				00DE712C1887CC9900AA24E9 /* LeftViewController.h */,
+				00DE712D1887CC9900AA24E9 /* LeftViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
 		00DE700E18878ED100AA24E9 = {
 			isa = PBXGroup;
 			children = (
 				00DE705C1887911B00AA24E9 /* MMDrawer */,
 				00DE702018878ED100AA24E9 /* Depol2 */,
+				0026F35E1888C2970000F1B0 /* ViewController */,
 				00DE703F18878ED200AA24E9 /* Depol2Tests */,
 				00DE701918878ED100AA24E9 /* Frameworks */,
 				00DE701818878ED100AA24E9 /* Products */,
@@ -135,12 +144,8 @@
 				00DE702918878ED100AA24E9 /* AppDelegate.h */,
 				00DE702A18878ED100AA24E9 /* AppDelegate.m */,
 				00DE702C18878ED100AA24E9 /* Main.storyboard */,
-				00DE702F18878ED100AA24E9 /* ViewController.h */,
-				00DE703018878ED100AA24E9 /* ViewController.m */,
 				00DE703218878ED100AA24E9 /* Images.xcassets */,
 				00DE702118878ED100AA24E9 /* Supporting Files */,
-				00DE712C1887CC9900AA24E9 /* LeftViewController.h */,
-				00DE712D1887CC9900AA24E9 /* LeftViewController.m */,
 			);
 			path = Depol2;
 			sourceTree = "<group>";
@@ -186,8 +191,6 @@
 				00DE70551887911500AA24E9 /* MMDrawerVisualState.m */,
 				00DE70561887911500AA24E9 /* UIViewController+MMDrawerController.h */,
 				00DE70571887911500AA24E9 /* UIViewController+MMDrawerController.m */,
-				00DE705D188791BC00AA24E9 /* CenterViewController.h */,
-				00DE705E188791BC00AA24E9 /* CenterViewController.m */,
 			);
 			name = MMDrawer;
 			sourceTree = "<group>";
@@ -291,8 +294,7 @@
 			files = (
 				00DE712E1887CC9900AA24E9 /* LeftViewController.m in Sources */,
 				00DE705A1887911500AA24E9 /* MMDrawerVisualState.m in Sources */,
-				00DE705F188791BC00AA24E9 /* CenterViewController.m in Sources */,
-				00DE703118878ED100AA24E9 /* ViewController.m in Sources */,
+				00DE703118878ED100AA24E9 /* CenterViewController.m in Sources */,
 				00DE705B1887911500AA24E9 /* UIViewController+MMDrawerController.m in Sources */,
 				00DE70591887911500AA24E9 /* MMDrawerController.m in Sources */,
 				00DE70581887911500AA24E9 /* MMDrawerBarButtonItem.m in Sources */,
@@ -506,6 +508,7 @@
 				00DE704B18878ED200AA24E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00DE704C18878ED200AA24E9 /* Build configuration list for PBXNativeTarget "Depol2Tests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +517,7 @@
 				00DE704E18878ED200AA24E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,5 +1,5 @@
 //
-//  CenterViewController.h
+//  ViewController.h
 //  Depol2
 //
 //  Created by SDT-1 on 2014. 1. 16..
