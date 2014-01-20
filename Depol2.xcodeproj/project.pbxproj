@@ -33,6 +33,7 @@
 		00DE705A1887911500AA24E9 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DE70551887911500AA24E9 /* MMDrawerVisualState.m */; };
 		00DE705B1887911500AA24E9 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DE70571887911500AA24E9 /* UIViewController+MMDrawerController.m */; };
 		00DE712E1887CC9900AA24E9 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DE712D1887CC9900AA24E9 /* LeftViewController.m */; };
+		8B39AED1188D5EFC00B04F72 /* PortfolioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B39AED0188D5EFC00B04F72 /* PortfolioViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,8 @@
 		00DE70571887911500AA24E9 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
 		00DE712C1887CC9900AA24E9 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeftViewController.h; path = Depol2/LeftViewController.h; sourceTree = "<group>"; };
 		00DE712D1887CC9900AA24E9 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeftViewController.m; path = Depol2/LeftViewController.m; sourceTree = "<group>"; };
+		8B39AECF188D5EFC00B04F72 /* PortfolioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PortfolioViewController.h; sourceTree = "<group>"; };
+		8B39AED0188D5EFC00B04F72 /* PortfolioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PortfolioViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +131,8 @@
 				0053CD25188D19A800C92F32 /* PortfolioCenterTabViewController.m */,
 				0053CD27188D19B500C92F32 /* PortfolioRightTabViewController.h */,
 				0053CD28188D19B500C92F32 /* PortfolioRightTabViewController.m */,
+				8B39AECF188D5EFC00B04F72 /* PortfolioViewController.h */,
+				8B39AED0188D5EFC00B04F72 /* PortfolioViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -336,6 +341,7 @@
 				00DE702B18878ED100AA24E9 /* AppDelegate.m in Sources */,
 				00DE702718878ED100AA24E9 /* main.m in Sources */,
 				0053CD26188D19A800C92F32 /* PortfolioCenterTabViewController.m in Sources */,
+				8B39AED1188D5EFC00B04F72 /* PortfolioViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
