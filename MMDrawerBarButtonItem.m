@@ -263,7 +263,8 @@
 
 -(id)initWithTarget:(id)target action:(SEL)action image:(UIImage *)image {
     if((floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1)){
-        return [self initWithImage:image
+        UIImage *buttonImage = [UIImage imageNamed:@"marker.png"];
+        return [self initWithImage:[buttonImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]
                              style:UIBarButtonItemStylePlain
                             target:target
                             action:action];

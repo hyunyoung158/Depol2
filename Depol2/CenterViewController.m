@@ -12,6 +12,7 @@
 
 @interface CenterViewController ()
 
+@property UINavigationController *navi;
 @end
 
 @implementation CenterViewController
@@ -35,14 +36,9 @@
 
 //왼쪽 서랍 버튼 설정
 -(void)setupLeftMenuButton{
-//    MMDrawerBarButtonItem * leftDrawerButton = [[MMDrawerBarButtonItem alloc] initWithTarget:self action:@selector(leftDrawerButtonPress:)];
-        MMDrawerBarButtonItem * leftDrawerButton = [[MMDrawerBarButtonItem alloc] initWithTarget:self action:@selector(leftDrawerButtonPress:) image:[UIImage imageNamed:@"marker.png"]];
+    MMDrawerBarButtonItem * leftDrawerButton = [[MMDrawerBarButtonItem alloc] initWithTarget:self action:@selector(leftDrawerButtonPress:) image:[UIImage imageNamed:@"marker.png"]];
     [self.navigationItem setLeftBarButtonItem:leftDrawerButton animated:YES];
 }
-
-//-(IBAction)leftDrawerButtonPress:(id)sender{
-//    [self.mm_drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
-//}
 
 -(void)leftDrawerButtonPress:(id)sender{
     [self.mm_drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];

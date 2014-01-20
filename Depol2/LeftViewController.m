@@ -34,10 +34,14 @@
     
     if (indexPath.row == 0) {
         CenterViewController *centerVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"center"];
-        [self.mm_drawerController setCenterViewController:centerVC withCloseAnimation:YES completion:nil];
+        UINavigationController *centerNavi = [[UINavigationController alloc] initWithRootViewController:centerVC];
+        
+        [self.mm_drawerController setCenterViewController:centerNavi withCloseAnimation:YES completion:nil];
+        
     }else if (indexPath.row == 1) {
          TempViewController *centerVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"temp"];
-        [self.mm_drawerController setCenterViewController:centerVC withCloseAnimation:YES completion:nil];
+        UINavigationController *centerNavi = [[UINavigationController alloc] initWithRootViewController:centerVC];
+        [self.mm_drawerController setCenterViewController:centerNavi withCloseAnimation:YES completion:nil];
     }
     
 }
