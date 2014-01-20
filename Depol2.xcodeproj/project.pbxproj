@@ -11,6 +11,9 @@
 		0048C22D18892B9C00805F27 /* TempViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0048C22C18892B9C00805F27 /* TempViewController.m */; };
 		0048C23018892D1500805F27 /* depol_bg1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0048C22E18892D1500805F27 /* depol_bg1@2x.png */; };
 		0048C23118892D1500805F27 /* depol_bg2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0048C22F18892D1500805F27 /* depol_bg2@2x.png */; };
+		0053CD23188D198800C92F32 /* PortfolioLeftTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0053CD22188D198800C92F32 /* PortfolioLeftTabViewController.m */; };
+		0053CD26188D19A800C92F32 /* PortfolioCenterTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0053CD25188D19A800C92F32 /* PortfolioCenterTabViewController.m */; };
+		0053CD29188D19B500C92F32 /* PortfolioRightTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0053CD28188D19B500C92F32 /* PortfolioRightTabViewController.m */; };
 		00DE701B18878ED100AA24E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00DE701A18878ED100AA24E9 /* Foundation.framework */; };
 		00DE701D18878ED100AA24E9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00DE701C18878ED100AA24E9 /* CoreGraphics.framework */; };
 		00DE701F18878ED100AA24E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00DE701E18878ED100AA24E9 /* UIKit.framework */; };
@@ -48,6 +51,12 @@
 		0048C22C18892B9C00805F27 /* TempViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempViewController.m; sourceTree = "<group>"; };
 		0048C22E18892D1500805F27 /* depol_bg1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "depol_bg1@2x.png"; sourceTree = "<group>"; };
 		0048C22F18892D1500805F27 /* depol_bg2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "depol_bg2@2x.png"; sourceTree = "<group>"; };
+		0053CD21188D198800C92F32 /* PortfolioLeftTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PortfolioLeftTabViewController.h; sourceTree = "<group>"; };
+		0053CD22188D198800C92F32 /* PortfolioLeftTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PortfolioLeftTabViewController.m; sourceTree = "<group>"; };
+		0053CD24188D19A800C92F32 /* PortfolioCenterTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PortfolioCenterTabViewController.h; sourceTree = "<group>"; };
+		0053CD25188D19A800C92F32 /* PortfolioCenterTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PortfolioCenterTabViewController.m; sourceTree = "<group>"; };
+		0053CD27188D19B500C92F32 /* PortfolioRightTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PortfolioRightTabViewController.h; sourceTree = "<group>"; };
+		0053CD28188D19B500C92F32 /* PortfolioRightTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PortfolioRightTabViewController.m; sourceTree = "<group>"; };
 		00DE701718878ED100AA24E9 /* Depol2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Depol2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00DE701A18878ED100AA24E9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		00DE701C18878ED100AA24E9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -113,6 +122,12 @@
 				00DE712D1887CC9900AA24E9 /* LeftViewController.m */,
 				0048C22B18892B9C00805F27 /* TempViewController.h */,
 				0048C22C18892B9C00805F27 /* TempViewController.m */,
+				0053CD21188D198800C92F32 /* PortfolioLeftTabViewController.h */,
+				0053CD22188D198800C92F32 /* PortfolioLeftTabViewController.m */,
+				0053CD24188D19A800C92F32 /* PortfolioCenterTabViewController.h */,
+				0053CD25188D19A800C92F32 /* PortfolioCenterTabViewController.m */,
+				0053CD27188D19B500C92F32 /* PortfolioRightTabViewController.h */,
+				0053CD28188D19B500C92F32 /* PortfolioRightTabViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -309,7 +324,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0053CD23188D198800C92F32 /* PortfolioLeftTabViewController.m in Sources */,
 				00DE712E1887CC9900AA24E9 /* LeftViewController.m in Sources */,
+				0053CD29188D19B500C92F32 /* PortfolioRightTabViewController.m in Sources */,
 				00DE705A1887911500AA24E9 /* MMDrawerVisualState.m in Sources */,
 				0048C22D18892B9C00805F27 /* TempViewController.m in Sources */,
 				00DE703118878ED100AA24E9 /* CenterViewController.m in Sources */,
@@ -318,6 +335,7 @@
 				00DE70581887911500AA24E9 /* MMDrawerBarButtonItem.m in Sources */,
 				00DE702B18878ED100AA24E9 /* AppDelegate.m in Sources */,
 				00DE702718878ED100AA24E9 /* main.m in Sources */,
+				0053CD26188D19A800C92F32 /* PortfolioCenterTabViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
