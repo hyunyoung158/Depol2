@@ -125,6 +125,13 @@
 				00DE712D1887CC9900AA24E9 /* LeftViewController.m */,
 				0048C22B18892B9C00805F27 /* TempViewController.h */,
 				0048C22C18892B9C00805F27 /* TempViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		0053CD2A188DFC5B00C92F32 /* Portfolio */ = {
+			isa = PBXGroup;
+			children = (
 				0053CD21188D198800C92F32 /* PortfolioLeftTabViewController.h */,
 				0053CD22188D198800C92F32 /* PortfolioLeftTabViewController.m */,
 				0053CD24188D19A800C92F32 /* PortfolioCenterTabViewController.h */,
@@ -134,7 +141,7 @@
 				8B39AECF188D5EFC00B04F72 /* PortfolioViewController.h */,
 				8B39AED0188D5EFC00B04F72 /* PortfolioViewController.m */,
 			);
-			name = ViewController;
+			name = Portfolio;
 			sourceTree = "<group>";
 		};
 		00DE700E18878ED100AA24E9 = {
@@ -144,6 +151,7 @@
 				0048C22F18892D1500805F27 /* depol_bg2@2x.png */,
 				0048C21D18891DCB00805F27 /* marker.png */,
 				00DE705C1887911B00AA24E9 /* MMDrawer */,
+				0053CD2A188DFC5B00C92F32 /* Portfolio */,
 				00DE702018878ED100AA24E9 /* Depol2 */,
 				0026F35E1888C2970000F1B0 /* ViewController */,
 				00DE703F18878ED200AA24E9 /* Depol2Tests */,
