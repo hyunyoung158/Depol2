@@ -14,6 +14,8 @@
 		0053CD23188D198800C92F32 /* PortfolioLeftTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0053CD22188D198800C92F32 /* PortfolioLeftTabViewController.m */; };
 		0053CD26188D19A800C92F32 /* PortfolioCenterTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0053CD25188D19A800C92F32 /* PortfolioCenterTabViewController.m */; };
 		0053CD29188D19B500C92F32 /* PortfolioRightTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0053CD28188D19B500C92F32 /* PortfolioRightTabViewController.m */; };
+		0053CE77188E740A00C92F32 /* CHTCollectionViewWaterfallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0053CE76188E740A00C92F32 /* CHTCollectionViewWaterfallLayout.m */; };
+		0053CE7A188E742600C92F32 /* CHTCollectionViewWaterfallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0053CE79188E742600C92F32 /* CHTCollectionViewWaterfallCell.m */; };
 		00DE701B18878ED100AA24E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00DE701A18878ED100AA24E9 /* Foundation.framework */; };
 		00DE701D18878ED100AA24E9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00DE701C18878ED100AA24E9 /* CoreGraphics.framework */; };
 		00DE701F18878ED100AA24E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00DE701E18878ED100AA24E9 /* UIKit.framework */; };
@@ -58,6 +60,10 @@
 		0053CD25188D19A800C92F32 /* PortfolioCenterTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PortfolioCenterTabViewController.m; sourceTree = "<group>"; };
 		0053CD27188D19B500C92F32 /* PortfolioRightTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PortfolioRightTabViewController.h; sourceTree = "<group>"; };
 		0053CD28188D19B500C92F32 /* PortfolioRightTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PortfolioRightTabViewController.m; sourceTree = "<group>"; };
+		0053CE75188E740A00C92F32 /* CHTCollectionViewWaterfallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTCollectionViewWaterfallLayout.h; sourceTree = "<group>"; };
+		0053CE76188E740A00C92F32 /* CHTCollectionViewWaterfallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTCollectionViewWaterfallLayout.m; sourceTree = "<group>"; };
+		0053CE78188E742600C92F32 /* CHTCollectionViewWaterfallCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTCollectionViewWaterfallCell.h; sourceTree = "<group>"; };
+		0053CE79188E742600C92F32 /* CHTCollectionViewWaterfallCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTCollectionViewWaterfallCell.m; sourceTree = "<group>"; };
 		00DE701718878ED100AA24E9 /* Depol2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Depol2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00DE701A18878ED100AA24E9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		00DE701C18878ED100AA24E9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -144,6 +150,17 @@
 			name = Portfolio;
 			sourceTree = "<group>";
 		};
+		0053CE74188E73D800C92F32 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				0053CE78188E742600C92F32 /* CHTCollectionViewWaterfallCell.h */,
+				0053CE79188E742600C92F32 /* CHTCollectionViewWaterfallCell.m */,
+				0053CE75188E740A00C92F32 /* CHTCollectionViewWaterfallLayout.h */,
+				0053CE76188E740A00C92F32 /* CHTCollectionViewWaterfallLayout.m */,
+			);
+			name = CollectionView;
+			sourceTree = "<group>";
+		};
 		00DE700E18878ED100AA24E9 = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +168,7 @@
 				0048C22F18892D1500805F27 /* depol_bg2@2x.png */,
 				0048C21D18891DCB00805F27 /* marker.png */,
 				00DE705C1887911B00AA24E9 /* MMDrawer */,
+				0053CE74188E73D800C92F32 /* CollectionView */,
 				0053CD2A188DFC5B00C92F32 /* Portfolio */,
 				00DE702018878ED100AA24E9 /* Depol2 */,
 				0026F35E1888C2970000F1B0 /* ViewController */,
@@ -340,8 +358,10 @@
 				0053CD23188D198800C92F32 /* PortfolioLeftTabViewController.m in Sources */,
 				00DE712E1887CC9900AA24E9 /* LeftViewController.m in Sources */,
 				0053CD29188D19B500C92F32 /* PortfolioRightTabViewController.m in Sources */,
+				0053CE77188E740A00C92F32 /* CHTCollectionViewWaterfallLayout.m in Sources */,
 				00DE705A1887911500AA24E9 /* MMDrawerVisualState.m in Sources */,
 				0048C22D18892B9C00805F27 /* TempViewController.m in Sources */,
+				0053CE7A188E742600C92F32 /* CHTCollectionViewWaterfallCell.m in Sources */,
 				00DE703118878ED100AA24E9 /* CenterViewController.m in Sources */,
 				00DE705B1887911500AA24E9 /* UIViewController+MMDrawerController.m in Sources */,
 				00DE70591887911500AA24E9 /* MMDrawerController.m in Sources */,
